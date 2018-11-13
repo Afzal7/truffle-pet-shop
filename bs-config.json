@@ -1,5 +1,6 @@
 {
   "server": {
+  	"dev": "lite-server",
     "baseDir": ["./src", "./build/contracts"]
   }
 }

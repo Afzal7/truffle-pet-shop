@@ -36,4 +36,11 @@ contract TestAdoption {
 	  Assert.equal(adopters[expectedPetId], expectedAdopter, "Owner of the expected pet should be this contract");
 	}
 
+	// Testing the unadopt() function
+	function testUserCanUnadoptPet() public {
+	  uint returnedId = adoption.unadopt(expectedPetId);
+
+	  Assert.equal(returnedId, expectedPetId, "Adoption of the expected pet should match what is returned.");
+	}
+
 }
